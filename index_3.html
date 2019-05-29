@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modifiable Adaptable window</title>
+        <style>
+             #body{
+            text-align: center;
+            margin: 200px 0 0 0;
+            background-color: grey;
+        }
+        #window
+        {
+            border: 1px solid black;
+            height:400px;
+        }
+                        
+                @media screen 
+        {
+            #window{
+                width:60%;    
+            }
+        }    
+        a{
+            text-decoration: none;
+            background-color: black; 
+            font-size: 17px;
+            padding:14px 16px;
+            color: white;
+        }  
+        a:hover
+        {
+            background-color: sienna;
+        }
+        
+            
+        </style>
+    </head>
+    <body id ="body">
+          <div id ="div1">
+               <iframe   id ="window" name ="iframe_a"></iframe>
+               <br>
+               <br>
+            </div>
+          <div id="div2">
+            <a href ="https://www.wikipedia.org/" target="iframe_a">Wikipedia</a>
+            <a href ="https://www.iitk.ac.in/"target="iframe_a">IIT Kanpur</a>
+            <a href ="https://www.bing.com/" target="iframe_a">Bing</a>
+          </div>
+ 
+    </body>
+</html>

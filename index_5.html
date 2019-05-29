@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Resizeable Browser-Modifiable window1</title>
+        <style>
+             #body{
+            text-align: center;
+            margin: 200px 0 0 0;
+            background-color: grey;
+        }
+        #window
+        {
+            border: 1px solid black;
+        
+                    height :600px;
+                    width :1600px; 
+                    background-color: white;
+         }
+                 #div
+                 {
+                     float: left;
+                     border:2px solid black;
+                     background-color:black;
+                     color :wheat;
+                 }]
+                
+        </style>
+        <script>
+            function search()
+            {
+                var input = document.getElementById("text_field");
+                var url = input.value;
+                var iframe = document.getElementById("window");
+                iframe.src = url;
+                
+
+            } 
+            function size()
+            {
+                var ht = document.getElementById("height").value;
+                var wdt = document.getElementById("width").value;
+                var iframe = document.getElementById("window");
+                iframe.style.width = wdt;
+                iframe.style.height = ht;
+            }
+        </script>
+    </head>
+    <body id="body">
+          <div>
+               <iframe  id ="window" name ="iframe_a">
+                   
+               </iframe>
+               
+         </div>
+         <div id ="div1">
+            <form >
+                
+                    <br><input type="text" id ="text_field"><br>
+                    <input type ="button" value ="GO!" onclick="search();"  id = "button">
+                
+            </form>
+        </div>
+            <div id = "div">Size of window:<br>
+            <b>Width</b><input type = "text" id="width"><br>
+            <b>Height</b><input type = "text" id="height"><br>
+            <i id ="a">write as "[size in pixels]px"<br>Eg. 500px</i><br>
+            <button onclick="size();">Set Size</button>
+         </div>
+    </body>
+</html>

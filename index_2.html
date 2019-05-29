@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adaptable window</title>
+        <style>
+             #body{
+            text-align: center;
+            margin: 200px 0 0 0;
+            background-color: grey;
+            }
+            #window
+            {
+                border: 1px solid black;
+            }
+                        
+            #window{
+                    height :400px;
+                    width :200px; 
+                    
+                }
+                @media screen 
+                {
+                    #window
+                    {
+                        
+                        width:60%;
+                    }
+                }
+            
+        </style>
+    </head>
+    <body id ="body">
+           <iframe src="https://www.wikipedia.org/"  id ="window" ></iframe>
+ 
+    </body>
+</html>
